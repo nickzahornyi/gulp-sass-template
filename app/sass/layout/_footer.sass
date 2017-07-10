@@ -1,0 +1,61 @@
+.footer
+  background: #f7f8f8
+  padding-top: 58px
+  padding-bottom: 24px
+  width: 100%
+  padding-left: $sidebar
+  .wrapper
+    & > div
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+  @media (max-width: 1440px)
+    padding-left: $sidebar-md
+  @media (max-width: 1023px)
+    padding-left: 0
+  .wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 1440px)
+      flex-direction: column
+  &__logo
+    width: 170px
+    align-self: center
+  &__text
+    color: #666666
+    font-size: 14px
+    max-width: 225px
+    margin-left: 25px
+  &__nav
+    padding-left: 0
+    list-style: none
+    // columns: 2
+    margin-left: 25px
+    &:first-child
+      margin-left: 0
+    li
+      a
+        color: #666666
+        font-size: 14px
+        text-decoration: underline
+  &__contacts
+    p
+      color: #666666
+      font-size: 14px
+      margin: 0
+      a
+        color: #666666
+        text-decoration: none
+  &__socials
+    margin-left: 25px
+    a
+      margin-right: 10px
+      transition: 0.2s
+      display: inline-block
+      transform: scale(0.9)
+      &:hover
+        transform: scale(1)
+        transition: 0.2s
